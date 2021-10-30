@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <title>About</title>
+    <link href="/fonts/mdi.describe" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="/css/main.css"/>
+    <script async type="text/javascript" src="/js/JS-CSS-Class-Switch-with-Memory.js"></script>
+    <script type="text/javascript" src="/js/JS-CSS-Class-Settings-Recall-on-load.js"></script>
+    <style>
+      html.dark {
+        --color-html: #0e0b0b ;
+        --color-body: #1a1010 ;
+        --color-text: #d1d1d1 ;
+        --color-link: #4fbcff ;
+        --color-selected-text: #000 ;
+        --color-selected-bg: #CF7 ;
+        }
+    </style>
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.materialboxed');
+      var instances = M.Materialbox.init(elems);
+    });
+    </script>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+      });
+    </script>
+</head>
+
+  <nav class="blue">
+  <ul id="slide-out" class="sidenav waves-effect waves-grey">
+      
+      
+      <li>
+            <div class="user-view">
+              <div class="background">
+                <img src="/img/navbg.jpg">
+              </div>
+              <a href="#name">
+                <b>cloud theme</b>
+              </a>
+              <a href="#description">
+                <span class="white-text name">write the description here</span>
+              </a>
+              <a href="#email">
+                <span class="white-text email">example@example.com</span>
+              </a>
+            </div>
+          </li>
+    
+             
+                 
+                 
+             
+                 
+                 
+                 <li><a class="waves-effect waves-grey" href="/pages/about">About</a></li>
+                 
+             
+                 
+                 
+                 <li><a class="waves-effect waves-grey" href="/pages/blog">Blogs</a></li>
+                 
+             
+                 
+                 
+                 <li><a class="waves-effect waves-grey" href="/">Front-page</a></li>
+                 
+             
+                 
+                 
+                 <li><a class="waves-effect waves-grey" href="/pages/tags">Tags</a></li>
+                 
+             
+                 
+                 
+             
+    
+    <li>
+      <a class="waves-effect waves-grey" onclick="ClassSwitch('html' , 'grey' , 'ColorMode');">
+        night mode
+     </a>
+    </li>
+   </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large black-text"><i class="material-icons">menu</i></a>
+ <a internal href="/" class="brand-logo flow-text black-text">cloud theme</a>
+</nav>
+
+    <body>
+          <div class="container s12 m12 l12">
+              <div class="container">
+  <br>
+    <div class="post">
+        <header class="post-header">
+            <h1 class="post-title">About</h1>
+        </header>
+          <article class="post-content">
+            <p>This is a blog theme wrote by tsingkwai
+<br /></p>
+<h5>Paper Jekyll Version:CandleLight</h5>
+<p><br />
+<a href="https://github.com/happyeggchen/paper-jekyll" class="waves-effect waves-light btn blue black-text z-depth-2">Github Link</a></p>
+
+          </article>
+        <br/><hr/><br/>
+    <a href="/" class="waves-effect waves-grey btn blue black-text z-depth-2">Back Home</a><br/>&nbsp;
+  </div>
+</div>
+
+          </div>
+    </body>
+</html>

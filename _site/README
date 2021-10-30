@@ -1,0 +1,8 @@
+Paper-jekyll
+=======================
+A start point for jekyll , with materialize css which can meet you all needs
+[How to use]
+1 > configure your gem,bundle,jeykll
+2 > clone it to local and cd to it
+3 > with "bundle exec jekyll s --host 0.0.0.0" , you are good to go
+btw > bap is a autoscript for publish sites to github repo,config domain to fit ur needs,type "./bap.fish h" to read help doc
