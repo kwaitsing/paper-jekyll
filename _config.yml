@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: cloud theme
+title: paper theme
 email: example@example.com #Show in sidenav
 description: write the description here #Show in sidenav
 baseurl: "" # the subpath of your site, e.g. /blog
