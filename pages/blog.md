@@ -5,11 +5,11 @@ title: Blogs
 ---
 {% for post in site.posts %}
 <div class="col s12 m7 center">
-  <div class="card horizontal waves-effect {{ site.css }} lighten-5">
+  <div class="card center waves-effect {{ site.css }} lighten-5">
         {% if post.cover %}
-          <div class="card-image small z-depth-2 waves-effect waves-light img-responsive cover">
-            <img src="{{ post.cover }}">
-          </div>
+        <div class="card-image small z-depth-2 waves-effect waves-light img-responsive cover">
+          <img src="{{ post.cover }}" onerror="this.style.display='none'" />
+        </div>
         {% endif %}
         <div class="card-stacked">
           <div class="card-content">

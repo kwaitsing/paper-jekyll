@@ -1,0 +1,45 @@
+I"�
+<div class="col s12 m7 center">
+  <div class="card center waves-effect blue lighten-5">
+        
+          <div class="container-fluid card-image  cover small z-depth-2">
+            <img src="/blog_cover/bluelake.png" onerror="this.style.display='none'" />
+            <div class="filter blue"></div>
+          </div>
+        
+        <div class="card-stacked">
+          <div class="card-content">
+            <h2 class="header">Welcome to Jekyll!</h2>
+              <p>Jul 4, 2021</p><hr />
+              <p>You’ll find this post in your _posts directory. Go ahead...</p>
+          </div>
+        <div class="card-action">
+        <a href="/jekyll/update/2021/07/04/welcome-to-jekyll.html" class="waves-effect waves-grey btn blue black-text">View</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col s12 m7 center">
+  <div class="card center waves-effect blue lighten-5">
+        
+          <div class="container-fluid card-image  cover small z-depth-2">
+            <img src="/blog_cover/bluelake.png" onerror="this.style.display='none'" />
+            <div class="filter blue"></div>
+          </div>
+        
+        <div class="card-stacked">
+          <div class="card-content">
+            <h2 class="header">Blue</h2>
+              <p>Jul 4, 2021 • 1</p><hr />
+              <p>
+</p>
+          </div>
+        <div class="card-action">
+        <a href="/2021/07/04/Blue.html" class="waves-effect waves-grey btn blue black-text">View</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+:ET
