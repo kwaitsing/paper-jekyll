@@ -23,3 +23,4 @@ email: example@example.com #Show in sidenav
 description: write the description here #Show in sidenav
 baseurl: "" # the subpath of your site, e.g. /blog
 css: "blue"
+page-list: [main]

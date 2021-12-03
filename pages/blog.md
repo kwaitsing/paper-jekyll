@@ -2,6 +2,8 @@
 layout: default
 permalink: /pages/blog
 title: Blogs
+row: true
+list: main
 ---
 {% for post in site.posts %}
 <div class="col s12 m7 center">

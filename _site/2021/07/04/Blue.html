@@ -1,12 +1,15 @@
 <html>
   <head>
     <title>Blue</title>
+    <link rel="icon" href="/favicon.svg">
     <link href="/fonts/mdi.describe" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="/css/main.css"/>
+    <link type="text/css" rel="stylesheet" href="/css/prism.css"/>
     <script async type="text/javascript" src="/js/JS-CSS-Class-Switch-with-Memory.js"></script>
     <script type="text/javascript" src="/js/JS-CSS-Class-Settings-Recall-on-load.js"></script>
+    <script type="text/javascript" src="/js/prism.js"></script>
     <style>
       html.dark {
         --color-html: #0e0b0b ;
@@ -30,63 +33,73 @@
         var instances = M.Sidenav.init(elems);
       });
     </script>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems);
+      });
+    </script>
 </head>
 
   <nav class="blue">
   <ul id="slide-out" class="sidenav waves-effect waves-grey">
-      
-      
-      <li>
-            <div class="user-view">
-              <div class="background">
-                <img src="/img/navbg.jpg">
-              </div>
-              <a href="#name">
-                <b>paper theme</b>
-              </a>
-              <a href="#description">
-                <span class="white-text name">write the description here</span>
-              </a>
-              <a href="#email">
-                <span class="white-text email">example@example.com</span>
-              </a>
-            </div>
-          </li>
     
-             
-                 
-                 
-             
-                 
-                 
-                 <li><a class="waves-effect waves-grey" href="/pages/about">About</a></li>
-                 
-             
-                 
-                 
-                 <li><a class="waves-effect waves-grey" href="/pages/blog">Blogs</a></li>
-                 
-             
-                 
-                 
-                 <li><a class="waves-effect waves-grey" href="/">Front-page</a></li>
-                 
-             
-                 
-                 
-                 <li><a class="waves-effect waves-grey" href="/pages/tags">Tags</a></li>
-                 
-             
-                 
-                 
-             
     
     <li>
-      <a class="waves-effect waves-grey" onclick="ClassSwitch('html' , 'grey' , 'ColorMode');">
-        night mode
-     </a>
+      <div class="user-view">
+        <div class="background">
+          <img src="/img/navbg.jpg">
+        </div>
+          <a href="#name">
+            <b>paper theme</b>
+          </a>
+          <a href="#description">
+            <span class="white-text name">write the description here</span>
+          </a>
+          <a href="#email">
+            <span class="white-text email">example@example.com</span>
+          </a>
+      </div>
     </li>
-   </ul>
+      <li><a class="waves-effect waves-grey" onclick="ClassSwitch('html' , 'grey' , 'ColorMode');"><i class="material-icons">brightness_medium</i>夜間模式|night mode</a></li>
+      <li><a href="/" class="waves-effect waves-grey">Front-page</a></li>
+    
+      <li><a class="dropdown-trigger" data-target="page-dropdown-main">main<i class="material-icons right">arrow_drop_down</i></a></li>
+      <ul id='page-dropdown-main' class='dropdown-content'>
+        
+          
+        
+          
+            
+              
+                <li><a href="/pages/about">About</a></li>
+              
+            
+          
+        
+          
+            
+              
+                <li><a href="/pages/blog">Blogs</a></li>
+              
+            
+          
+        
+          
+        
+          
+            
+              
+                <li><a href="/pages/tags">Tags</a></li>
+              
+            
+          
+        
+          
+        
+        </ul>
+      
+    </ul>
   <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large black-text"><i class="material-icons">menu</i></a>
  <a internal href="/" class="brand-logo flow-text black-text">paper theme</a>
 </nav>
@@ -111,6 +124,7 @@
       
   </div>
 </div>
+<br></br>
 
           </div>
     </body>

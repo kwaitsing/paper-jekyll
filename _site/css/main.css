@@ -10,3 +10,7 @@
 .card .cover:hover {
     transform: scale(0.96);
 }
+strong
+{
+    font-weight: bold;
+}

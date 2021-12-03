@@ -2,6 +2,8 @@
 layout: default
 permalink: /pages/tags
 title: Tags
+row: true
+list: main
 ---
 {% for tag in site.tags %}
   <div class="container s12 m12 l12">
