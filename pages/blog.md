@@ -6,6 +6,7 @@ row: true
 list: main
 ---
 {% for post in site.posts %}
+{% if post.hidden != true %}
 <div class="col s12 m7 center">
   <div class="card center waves-effect {{ site.css }} lighten-5">
         {% if post.cover %}
@@ -25,4 +26,5 @@ list: main
     </div>
   </div>
 </div>
+{% endif %}
 {% endfor %}
