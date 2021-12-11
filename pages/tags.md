@@ -11,7 +11,9 @@ list: main
       <h3>{{ tag[0] }}</h3>
     </div>
           {% for post in tag[1] %}
+            {% if post.hidden != true %}
               <a href="{{ post.url }}" class="waves-effect waves-grey btn {{ site.css }} black-text z-depth-1">{{ post.title }}</a>
+            {% endif %}
           {% endfor %}
       <br>
   </div>
