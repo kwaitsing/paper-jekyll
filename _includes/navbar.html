@@ -1,0 +1,40 @@
+<nav class="{{ site.css }}">
+  <ul id="slide-out" class="sidenav">
+    {% assign default_paths = site.pages | map: "path" %}
+    {% assign page_paths = site.header_pages | default: default_paths %}
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="/img/navbg.webp">
+        </div>
+          <a href="#name">
+            <b>{{site.title}}</b>
+          </a>
+          <a href="#description">
+            <span class="white-text name">{{site.description}}</span>
+          </a>
+          <a href="#email">
+            <span class="white-text email">{{site.email}}</span>
+          </a>
+      </div>
+    </li>
+      <li><a class="waves-effect waves-grey" onclick="ClassSwitch('html' , 'grey' , 'ColorMode');"><i class="material-icons">brightness_medium</i>夜間模式|night mode</a></li>
+      <li><a href="{{ site.baseurl }}/" class="waves-effect waves-grey">Front-page</a></li>
+    {% for rows in site.page-list %}
+      <li><a class="dropdown-trigger" data-target="page-dropdown-{{ rows }}">{{ rows }}<i class="material-icons right">arrow_drop_down</i></a></li>
+      <ul id='page-dropdown-{{ rows }}' class='dropdown-content'>
+        {% for page in site.pages %}
+          {% if page.row == true %}
+            {% for row-page in page.list %}
+              {% if row-page == rows %}
+                <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+        </ul>
+      {% endfor %}
+    </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large black-text"><i class="material-icons">menu</i></a>
+ <a internal href="{{ site.baseurl }}/" class="brand-logo flow-text black-text">{{site.title}}</a>
+</nav>

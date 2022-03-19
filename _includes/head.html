@@ -1,0 +1,41 @@
+<head>
+    <title>{{page.title}}</title>
+    <link rel="icon" href="/favicon.svg">
+    <link href="/fonts/mdi.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="/css/main.css"/>
+    <link type="text/css" rel="stylesheet" href="/css/prism.css"/>
+    <script async type="text/javascript" src="/js/JS-CSS-Class-Switch-with-Memory.js"></script>
+    <script type="text/javascript" src="/js/JS-CSS-Class-Settings-Recall-on-load.js"></script>
+    <script type="text/javascript" src="/js/prism.js"></script>
+    <style>
+      html.dark {
+        --color-html: #0e0b0b ;
+        --color-body: #1a1010 ;
+        --color-text: #d1d1d1 ;
+        --color-link: #4fbcff ;
+        --color-selected-text: #000 ;
+        --color-selected-bg: #CF7 ;
+        }
+    </style>
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.materialboxed');
+      var instances = M.Materialbox.init(elems);
+    });
+    </script>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+      });
+    </script>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems);
+      });
+    </script>
+</head>

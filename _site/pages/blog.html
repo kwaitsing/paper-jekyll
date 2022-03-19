@@ -1,0 +1,154 @@
+<html>
+  <head>
+    <title>Blogs</title>
+    <link rel="icon" href="/favicon.svg">
+    <link href="/fonts/mdi.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="/css/main.css"/>
+    <link type="text/css" rel="stylesheet" href="/css/prism.css"/>
+    <script async type="text/javascript" src="/js/JS-CSS-Class-Switch-with-Memory.js"></script>
+    <script type="text/javascript" src="/js/JS-CSS-Class-Settings-Recall-on-load.js"></script>
+    <script type="text/javascript" src="/js/prism.js"></script>
+    <style>
+      html.dark {
+        --color-html: #0e0b0b ;
+        --color-body: #1a1010 ;
+        --color-text: #d1d1d1 ;
+        --color-link: #4fbcff ;
+        --color-selected-text: #000 ;
+        --color-selected-bg: #CF7 ;
+        }
+    </style>
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.materialboxed');
+      var instances = M.Materialbox.init(elems);
+    });
+    </script>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+      });
+    </script>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.dropdown-trigger');
+        var instances = M.Dropdown.init(elems);
+      });
+    </script>
+</head>
+
+  <nav class="blue">
+  <ul id="slide-out" class="sidenav">
+    
+    
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="/img/navbg.webp">
+        </div>
+          <a href="#name">
+            <b>paper theme</b>
+          </a>
+          <a href="#description">
+            <span class="white-text name">write the description here</span>
+          </a>
+          <a href="#email">
+            <span class="white-text email">example@example.com</span>
+          </a>
+      </div>
+    </li>
+      <li><a class="waves-effect waves-grey" onclick="ClassSwitch('html' , 'grey' , 'ColorMode');"><i class="material-icons">brightness_medium</i>夜間模式|night mode</a></li>
+      <li><a href="/" class="waves-effect waves-grey">Front-page</a></li>
+    
+      <li><a class="dropdown-trigger" data-target="page-dropdown-main">main<i class="material-icons right">arrow_drop_down</i></a></li>
+      <ul id='page-dropdown-main' class='dropdown-content'>
+        
+          
+        
+          
+            
+              
+                <li><a href="/pages/about">About</a></li>
+              
+            
+          
+        
+          
+            
+              
+                <li><a href="/pages/blog">Blogs</a></li>
+              
+            
+          
+        
+          
+        
+          
+            
+              
+                <li><a href="/pages/tags">Tags</a></li>
+              
+            
+          
+        
+          
+        
+        </ul>
+      
+    </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large black-text"><i class="material-icons">menu</i></a>
+ <a internal href="/" class="brand-logo flow-text black-text">paper theme</a>
+</nav>
+
+    <body>
+          <div class="container s12 m12 l12">
+              
+<div class="col s12 m7 center">
+  <div class="card center waves-effect blue lighten-5">
+        
+        <div class="card-image z-depth-2 waves-effect waves-light img-responsive cover">
+          <img src="/blog_cover/bluelake.png" onerror="this.style.display='none'" />
+        </div>
+        
+        <div class="card-stacked">
+          <div class="card-content">
+            <h2 class="header">Welcome to Jekyll!</h2>
+              <p>Jul 4, 2021</p><hr />
+              <p>You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your...</p>
+          </div>
+        <div class="card-action">
+        <a href="/jekyll/update/2021/07/04/welcome-to-jekyll.html" class="waves-effect waves-grey btn blue black-text">View</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col s12 m7 center">
+  <div class="card center waves-effect blue lighten-5">
+        
+        <div class="card-image z-depth-2 waves-effect waves-light img-responsive cover">
+          <img src="/blog_cover/bluelake.png" onerror="this.style.display='none'" />
+        </div>
+        
+        <div class="card-stacked">
+          <div class="card-content">
+            <h2 class="header">Blue</h2>
+              <p>Jul 4, 2021 • 1</p><hr />
+              <p>
+</p>
+          </div>
+        <div class="card-action">
+        <a href="/2021/07/04/Blue.html" class="waves-effect waves-grey btn blue black-text">View</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+          </div>
+    </body>
+</html>
