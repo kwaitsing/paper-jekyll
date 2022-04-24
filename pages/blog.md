@@ -21,7 +21,7 @@ list: main
               <p>{{ post.content | strip_html | truncatewords: 20}}</p>
           </div>
         <div class="card-action">
-        <a href="{{ post.url | prepend: site.baseurl }}" class="waves-effect waves-grey btn {{ site.css }} black-text">View</a>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="waves-effect waves-grey btn {{ site.css }}">View</a>
       </div>
     </div>
   </div>

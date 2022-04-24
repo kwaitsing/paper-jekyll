@@ -12,7 +12,7 @@ list: main
     </div>
           {% for post in tag[1] %}
             {% if post.hidden != true %}
-              <a href="{{ post.url }}" class="waves-effect waves-grey btn {{ site.css }} black-text z-depth-1">{{ post.title }}</a>
+              <a href="{{ post.url }}" class="waves-effect waves-grey btn {{ site.css }} z-depth-1">{{ post.title }}</a>
             {% endif %}
           {% endfor %}
       <br>
